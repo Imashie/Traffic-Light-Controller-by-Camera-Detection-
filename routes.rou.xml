@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- Vehicle types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="50" color="1,1,0"/>
+    
+    <!-- Routes -->
+    <route id="right_to_left" edges="-E0 -E00"/>
+    <route id="right_to_down" edges="-E0 -E1"/>
+    <route id="down_to_right" edges="E1 E0.94"/>
+    <route id="down_to_left" edges="E1 -E00"/>
+    <route id="left_to_right" edges="E0 E0.94"/>
+    <route id="left_to_down" edges="E0 -E1"/>
+    
+    <!-- Vehicle flows -->
+    <flow id="flow1" type="car" route="right_to_left" begin="0" end="3600" period="10"/>
+    <flow id="flow2" type="car" route="right_to_down" begin="0" end="3600" period="15"/>
+    <flow id="flow3" type="car" route="down_to_right" begin="0" end="3600" period="12"/>
+    <flow id="flow4" type="car" route="down_to_left" begin="0" end="3600" period="18"/>
+    <flow id="flow5" type="car" route="left_to_right" begin="0" end="3600" period="8"/>
+    <flow id="flow6" type="car" route="left_to_down" begin="0" end="3600" period="20"/>
+</routes>
